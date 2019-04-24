@@ -1,6 +1,10 @@
 NAME = osixia/openldap
 VERSION = 1.2.4
 
+become:
+NAME = openemail/openldap
+VERSION = 1.2.4
+
 .PHONY: build build-nocache test tag-latest push push-latest release git-tag-version
 
 build:
