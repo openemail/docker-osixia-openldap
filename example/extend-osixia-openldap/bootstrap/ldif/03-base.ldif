@@ -1,0 +1,12 @@
+dn: o=openemail,{{ LDAP_BASE_DN }}
+objectClass: organization
+objectClass: top
+o: hosting description: Hosting Organization
+# Read only account
+
+dn: cn=vmail,o=openemail,{{ LDAP_BASE_DN }}
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: vmail
+userPassword: {{ LDAP_READONLY_USER_PASSWORD_ENCRYPTED }}
+description: Read only account
