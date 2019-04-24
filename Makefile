@@ -3,7 +3,7 @@ VERSION = 1.2.4
 
 become:
 NAME = openemail/openldap
-VERSION = 1.2.4
+VERSION = latest
 
 .PHONY: build build-nocache test tag-latest push push-latest release git-tag-version
 
